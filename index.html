@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/assets/jsm-logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajinkya Lakhara</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      background-color: #010103;
+      width: 100%;
+    }
+
+    #frame {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: -1; /* Keep canvas in background */
+    }
+  </style>
+</head>
+<body>
+  <canvas id="frame"></canvas>
+
+  <!-- Your actual app content -->
+  <div id="root"></div>
+
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
